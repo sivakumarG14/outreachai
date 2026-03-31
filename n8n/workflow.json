@@ -1,0 +1,106 @@
+{
+  "name": "Boorgen Lead Outreach - Funnel",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "lead-outreach",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "c58f467a-b822-48f1-ab14-3716332ae8a5",
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        400,
+        -96
+      ],
+      "webhookId": "c2e9e9bd-a151-4aa5-966f-b1359fb38f90"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.first().json.body || $input.first().json;\nreturn [{ json: { leadId: body.leadId, type: body.type || 'initial', name: body.name, email: body.email, hotel: body.hotel, location: body.location } }];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        608,
+        -80
+      ],
+      "id": "051f8934-a022-47d1-a8e9-7a676ed3b0f5",
+      "name": "Extract Lead Data"
+    },
+    {
+      "parameters": {
+        "fromEmail": "your_smtp_email@example.com",
+        "toEmail": "={{ $json.email }}",
+        "subject": "Welcome, {{ $json.name }}!",
+        "text": "Hello {{ $json.name }},\n\nThank you for your interest in {{ $json.hotel }} at {{ $json.location }}.\n\nBest regards,\nBoorgen Outreach Team",
+        "html": "<p>Hello {{ $json.name }},</p><p>Thank you for your interest in <b>{{ $json.hotel }}</b> at <b>{{ $json.location }}</b>.</p><p>Best regards,<br>Boorgen Outreach Team</p>"
+      },
+      "id": "email-node-1",
+      "name": "Send Email to Lead",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 1,
+      "position": [
+        896,
+        -96
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={ \"status\": \"ok\" }",
+        "options": {}
+      },
+      "id": "20fe1acf-b9cb-41b4-ae27-3d210606c61a",
+      "name": "Webhook Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [
+        1168,
+        -96
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Extract Lead Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Lead Data": {
+      "main": [
+        [
+          {
+            "node": "Send Email to Lead",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Email to Lead": {
+      "main": [
+        [
+          {
+            "node": "Webhook Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "instanceId": "1f28b04351a3af32407538d1996a57efcac376421ba599a723feefbf9e498aa6"
+  }
+}
