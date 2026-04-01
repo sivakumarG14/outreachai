@@ -1,0 +1,16 @@
+name,email,company,industry,title,phone,location,linkedin
+Alex Thompson,alex.thompson@quantumtech.io,QuantumTech,Technology,CEO,+1-555-0201,San Francisco, CA,https://linkedin.com/in/alexthompson
+Brianna Martinez,brianna.martinez@nextgen.ai,NextGen,Artificial Intelligence,CTO,+1-555-0202,Austin, TX,https://linkedin.com/in/briannamartinez
+Carlos Rodriguez,carlos.rodriguez@cloudsys.com,CloudSys,Cloud Computing,VP Engineering,+1-555-0203,Seattle, WA,https://linkedin.com/in/carlosrodriguez
+Diana Chen,diana.chen@biotech.health,BioTech,Healthcare,Director R&D,+1-555-0204,Boston, MA,https://linkedin.com/in/dianachen
+Ethan Williams,ethan.williams@fintech.pro,FinTech Pro,Finance,CFO,+1-555-0205,New York, NY,https://linkedin.com/in/ethanwilliams
+Fiona Davis,fiona.davis@edutech.edu,EduTech,Education,Product Manager,+1-555-0206,Chicago, IL,https://linkedin.com/in/fionadavis
+George Lee,george.lee@logistics.net,LogisticsNet,Supply Chain,Operations Director,+1-555-0207,Los Angeles, CA,https://linkedin.com/in/georgelee
+Hannah Wilson,hannah.wilson@greenenergy.io,GreenEnergy,Renewable Energy,Sustainability Lead,+1-555-0208,Denver, CO,https://linkedin.com/in/hannahwilson
+Ian Brown,ian.brown@cybersec.com,CyberSec,Cybersecurity,Security Engineer,+1-555-0209,Washington, DC,https://linkedin.com/in/ianbrown
+Julia Garcia,julia.garcia@marketboost.com,MarketBoost,Marketing,Brand Manager,+1-555-0210,Miami, FL,https://linkedin.com/in/juliagarcia
+Kevin Anderson,kevin.anderson@retailtech.com,RetailTech,Retail Technology,Innovation Lead,+1-555-0211,Atlanta, GA,https://linkedin.com/in/kevinanderson
+Laura Martinez,laura.martinez@consulting.pro,ConsultingPro,Management Consulting,Senior Consultant,+1-555-0212,Phoenix, AZ,https://linkedin.com/in/lauramartinez
+Michael Taylor,michael.taylor@realestate.ai,RealEstateAI,Real Estate Tech,Investment Analyst,+1-555-0213,Portland, OR,https://linkedin.com/in/michaeltaylor
+Nancy Thompson,nancy.thompson@foodtech.io,FoodTech,Food Technology,R&D Manager,+1-555-0214,Nashville, TN,https://linkedin.com/in/nancythompson
+Oliver Wilson,oliver.wilson@autotech.com,AutoTech,Automotive Tech,Engineering Lead,+1-555-0215,Detroit, MI,https://linkedin.com/in/oliverwilson

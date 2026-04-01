@@ -1,0 +1,17 @@
+Name,Email,Company,Industry,Role,Score,Location,LinkedIn
+John Doe,john.doe@company.com,Example Corp,Technology,Software Engineer,-677,"San Francisco, CA",https://linkedin.com/in/johndoe
+Jane Smith,jane.smith@innovatech.com,InnovaTech,Technology,Data Scientist,-245,"New York, NY",https://linkedin.com/in/janesmith
+Michael Brown,michael.brown@finedge.com,FinEdge,Finance,Business Analyst,-120,"London, UK",https://linkedin.com/in/michaelbrown
+Emily Davis,emily.davis@healthplus.com,HealthPlus,Healthcare,Product Manager,-89,"Toronto, Canada",https://linkedin.com/in/emilydavis
+Robert Wilson,robert.wilson@buildcorp.com,BuildCorp,Construction,Civil Engineer,-310,"Sydney, Australia",https://linkedin.com/in/robertwilson
+Sophia Martinez,sophia.martinez@marketguru.com,MarketGuru,Marketing,Digital Marketing Specialist,-56,"Los Angeles, CA",https://linkedin.com/in/sophiamartinez
+Daniel Anderson,daniel.anderson@edunext.com,EduNext,Education,Software Developer,-178,"Boston, MA",https://linkedin.com/in/danielanderson
+Olivia Thomas,olivia.thomas@greenenergy.com,GreenEnergy,Energy,Renewable Energy Analyst,-220,"Berlin, Germany",https://linkedin.com/in/oliviathomas
+James Taylor,james.taylor@retailhub.com,RetailHub,Retail,Supply Chain Manager,-140,"Chicago, IL",https://linkedin.com/in/jamestaylor
+Isabella Moore,isabella.moore@designpro.com,DesignPro,Design,UI/UX Designer,-75,"Austin, TX",https://linkedin.com/in/isabellamoore
+William Jackson,william.jackson@cybersecure.com,CyberSecure,Security,Cybersecurity Analyst,-199,Singapore,https://linkedin.com/in/williamjackson
+NoEmailUser,,StartupX,Technology,Developer,-50,"Bangalore, India",https://linkedin.com/in/noemail
+InvalidEmailUser,invalid-email,ABC Corp,Finance,Accountant,-30,"Mumbai, India",https://linkedin.com/in/invalid
+MissingLinkedIn,rahul.verma@test.com,TestCorp,IT,Tester,-10,"Delhi, India",
+SpecialCharsUser,ana.garcía@global.com,GlobalTech,Technology,Engineer,-88,"Madrid, Spain",https://linkedin.com/in/anagarcia
+LargeScoreUser,big.score@scale.com,ScaleAI,AI,ML Engineer,-9999,"San Jose, CA",https://linkedin.com/in/bigscore

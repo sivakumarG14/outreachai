@@ -1,0 +1,16 @@
+name,email,company,industry,title,phone,location,linkedin
+John Anderson,john.anderson@techstart.com,TechStart,Technology,CEO,+1-555-0101,San Francisco, CA,https://linkedin.com/in/johnanderson
+Sarah Chen,sarah.chen@innovatecorp.io,InnovateCorp,Technology,CTO,+1-555-0102,Seattle, WA,https://linkedin.com/in/sarahchen
+Michael Rodriguez,michael.rodriguez@growthlabs.com,GrowthLabs,Marketing,Director,+1-555-0103,Austin, TX,https://linkedin.com/in/michaelrodriguez
+Emily Johnson,emily.johnson@financeplus.net,FinancePlus,Finance,CFO,+1-555-0104,New York, NY,https://linkedin.com/in/emilyjohnson
+David Kim,david.kim@healthtech.ai,HealthTech,Healthcare,VP Engineering,+1-555-0105,Boston, MA,https://linkedin.com/in/davidkim
+Lisa Wang,lisa.wang@edustart.edu,EduStart,Education,Product Manager,+1-555-0106,Chicago, IL,https://linkedin.com/in/lisawang
+Robert Taylor,robert.taylor@retailpro.com,RetailPro,Retail,Operations Director,+1-555-0107,Los Angeles, CA,https://linkedin.com/in/roberttaylor
+Amanda Martinez,amanda.martinez@greentech.io,GreenTech,Energy,Sustainability Lead,+1-555-0108,Denver, CO,https://linkedin.com/in/amandamartinez
+James Wilson,james.wilson@cybersec.com,CyberSec,Technology,Security Engineer,+1-555-0109,Washington, DC,https://linkedin.com/in/jameswilson
+Jennifer Davis,jennifer.davis@marketboost.com,MarketBoost,Marketing,Brand Manager,+1-555-0110,Miami, FL,https://linkedin.com/in/jenniferdavis
+Christopher Lee,chris.lee@logistics.net,LogisticsNet,Logistics,Supply Chain Manager,+1-555-0111,Atlanta, GA,https://linkedin.com/in/chrislee
+Michelle Brown,michelle.brown@consulting.pro,ConsultingPro,Consulting,Senior Consultant,+1-555-0112,Phoenix, AZ,https://linkedin.com/in/michellebrown
+Daniel Garcia,daniel.garcia@realestate.ai,RealEstateAI,Real Estate,Investment Analyst,+1-555-0113,Portland, OR,https://linkedin.com/in/danielgarcia
+Sophia Thompson,sophia.thompson@foodtech.io,FoodTech,Food & Beverage,R&D Manager,+1-555-0114,Nashville, TN,https://linkedin.com/in/sophiathompson
+Andrew Martinez,andrew.martinez@autotech.com,AutoTech,Automotive,Engineer,+1-555-0115,Detroit, MI,https://linkedin.com/in/andrewmartinez
