@@ -183,6 +183,7 @@ async function processReply(lead, replyType, replyText = '') {
     lead.status = 'Micro-Commitment';
     lead.addressProvided = true;
     lead.score += SCORE.address;
+    console.log(`Address reply: score += ${SCORE.address}, new score = ${lead.score}`);
     await notifyAna(lead, 'Lead sent details — analysis needed');
     await lead.save();
     emit('leadUpdated', { leadId: lead._id, status: lead.status, score: lead.score });

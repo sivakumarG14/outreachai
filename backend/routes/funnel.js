@@ -46,7 +46,7 @@ router.post('/reply', auth, async (req, res) => {
 
     // Return current lead state (score/status update happens async)
     // Re-fetch after brief moment for accurate response
-    await new Promise(r => setTimeout(r, 800));
+    await new Promise(r => setTimeout(r, 2000));
     const updated = await Lead.findById(leadId);
     emit('leadUpdated', { leadId: updated._id, status: updated.status, score: updated.score });
     res.json({ message: 'Reply processed', lead: updated });

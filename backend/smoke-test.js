@@ -40,7 +40,7 @@ const check = (label, cond, detail) => cond ? ok(label) : fail(label, detail);
   check('Backend health', h.body?.status === 'ok', JSON.stringify(h.body));
 
   // Login
-  const login = await req('POST', '/api/login', { email: 'admin@boorgen.com', password: 'admin@123' });
+  const login = await req('POST', '/api/login', { email: 'admin@outreachai.com', password: 'admin@123' });
   check('Login returns JWT', login.status === 200 && !!login.body.token, `status=${login.status}`);
   const token = login.body.token;
 
@@ -142,7 +142,7 @@ const check = (label, cond, detail) => cond ? ok(label) : fail(label, detail);
   console.log('\n  ✅ All systems operational\n');
   console.log('  Frontend → http://localhost:5173');
   console.log('  Backend  → http://localhost:3000');
-  console.log('  Login    → admin@boorgen.com / admin@123\n');
+  console.log('  Login    → admin@outreachai.com / admin@123\n');
   process.exit(0);
 })().catch(err => {
   console.error('\n  ❌ Smoke test error:', err.message);

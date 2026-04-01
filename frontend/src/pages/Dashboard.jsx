@@ -443,7 +443,7 @@ export default function Dashboard() {
 const s = {
   layout: { display: 'flex', minHeight: '100vh', background: 'var(--bg)' },
   sidebar: {
-    width: 260, flexShrink: 0,
+    width: 280, flexShrink: 0,
     background: 'linear-gradient(180deg, var(--bg2) 0%, #0c1120 100%)',
     borderRight: '1px solid var(--border)',
     display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
@@ -465,6 +465,8 @@ const s = {
     background: 'var(--brand-gold-glow)', cursor: 'pointer',
     transition: 'all 0.2s var(--ease)',
     border: '1px solid rgba(201,168,76,0.06)',
+    minWidth: '0', // Allow text truncation
+    overflow: 'hidden',
   },
   navItemMuted: { background: 'transparent', color: 'var(--text3)', fontWeight: 500, border: '1px solid transparent' },
   navIcon: { fontSize: 20, width: 20, textAlign: 'center', flexShrink: 0 },

@@ -5,9 +5,9 @@ const STATS = [
   { key: 'cold', label: 'Cold', icon: 'ac_unit', color: '#94a3b8', bg: 'rgba(148,163,184,0.07)' },
   { key: 'engaged', label: 'Engaged', icon: 'forum', color: 'var(--yellow)', bg: 'var(--yellow-bg)' },
   { key: 'microCommitment', label: 'Micro-Commit', icon: 'check_circle', color: 'var(--purple)', bg: 'var(--purple-bg)' },
-  { key: 'callScheduled', label: 'Call Scheduled', icon: 'event', color: 'var(--green)', bg: 'var(--green-bg)' },
+  { key: 'callScheduled', label: 'Call Schd', icon: 'event', color: 'var(--green)', bg: 'var(--green-bg)' },
   { key: 'noInterest', label: 'No Interest', icon: 'block', color: 'var(--red)', bg: 'var(--red-bg)' },
-  { key: 'highPriority', label: 'High Priority', icon: 'local_fire_department', color: 'var(--orange)', bg: 'var(--orange-bg)' },
+  { key: 'highPriority', label: 'Priority', icon: 'local_fire_department', color: 'var(--orange)', bg: 'var(--orange-bg)' },
 ];
 
 export default function StatsBar({ stats }) {
@@ -37,7 +37,7 @@ export default function StatsBar({ stats }) {
 const s = {
   grid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(145px, 1fr))',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
     gap: 14,
     marginBottom: 28,
   },
@@ -52,6 +52,7 @@ const s = {
     transition: 'all 0.3s var(--ease)',
     animation: 'fadeIn 0.4s var(--ease) both',
     cursor: 'default',
+    minWidth: '0', // Allow content to shrink
   },
   iconWrap: {
     width: 42, height: 42,
@@ -74,5 +75,8 @@ const s = {
     marginTop: 4,
     fontWeight: 500,
     letterSpacing: '0.02em',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
   },
 };
